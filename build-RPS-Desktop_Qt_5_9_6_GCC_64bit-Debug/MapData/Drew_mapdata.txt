@@ -1,0 +1,9 @@
+P 0
+R 1
+RP 1
+RPP 0
+RPR 0
+RPS 1
+RR 0
+RS 0
+S 0
