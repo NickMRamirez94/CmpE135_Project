@@ -34,7 +34,7 @@ sudo apt install qt5-default
 Clone the application directory.
 
 ```
-git clone https://github.com/NickMRamirez94/CmpE135_Project.git
+git clone https://github.com/NickMRamirez94/RPS.git
 ```
 
 ### Through Qt Creator
