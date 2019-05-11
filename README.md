@@ -39,7 +39,7 @@ git clone https://github.com/NickMRamirez94/RPS.git
 
 ### Through Qt Creator
 
-Open the Qt Creator. Select Open Project. Select RPS.pro file. Qt Creator will import files. The application can then be run from there.
+Delete the .user file. Open the Qt Creator. Select Open Project. Select RPS.pro file. Qt Creator will import files. The application can then be run from there after specifying your environment settings. Make sure that you include the Desktop Application kit.
 
 If there is an error between version try cleaning the project and rebuilding.
 
