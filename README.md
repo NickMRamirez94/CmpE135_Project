@@ -73,4 +73,8 @@ If qmake is not found by default you'll need to specifiy the path to the executa
 
 Upon launching the application the user will be presented with a series of dialogs that will allow the user to Login/Create a New User and choose the settings for a game of RPS.
 
-![alt text](https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_GameArea.png)![alt text](https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_GameArea.png)
+<p float="left">
+  <img src="https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_NewUser.png" width="100" />
+  <img src="https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_Login.png" width="100" /> 
+  <img src="https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_Settings.png" width="100" />
+</p>
