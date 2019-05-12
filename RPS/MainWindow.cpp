@@ -50,7 +50,7 @@ void MainWindow::on_action_new_game_triggered()
 
 void MainWindow::on_action_graph_user_data_triggered()
 {
-    QString file_path = QFileDialog::getOpenFileName( this, "Load User Map Data", "~/Documents/CmpE135/Assignments/Project/build-RPS-Desktop_Qt_5_9_6_GCC_64bit-Debug/MapData" );
+    QString file_path = QFileDialog::getOpenFileName( this, "Load User Map Data", QCoreApplication::applicationDirPath() );
     if(!file_path.isEmpty())
     {
         GraphDialog * graph_dialog = new GraphDialog (this, file_path);
