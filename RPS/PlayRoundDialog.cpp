@@ -2,6 +2,7 @@
 #include "ui_PlayRoundDialog.h"
 
 #include <QPixmap>
+#include <QtDebug>
 
 PlayRoundDialog::PlayRoundDialog(QWidget *parent, Moves player_move, Moves computer_move) :
     QDialog(parent),
@@ -13,8 +14,15 @@ PlayRoundDialog::PlayRoundDialog(QWidget *parent, Moves player_move, Moves compu
     ui->setupUi(this);
     ui->shoot_label->setVisible(false);
 
-    playerpix_ = new QPixmap("/home/nick/Pictures/rock.jpg");
-    computerpix_ = new QPixmap("/home/nick/Pictures/rock.jpg");
+    rock_image = QCoreApplication::applicationDirPath();
+    rock_image.append("/Images/rock.jpg");
+    paper_image = QCoreApplication::applicationDirPath();
+    paper_image.append("/Images/paper.jpg");
+    scissors_image = QCoreApplication::applicationDirPath();
+    scissors_image.append("/Images/scissors.jpg");
+
+    playerpix_ = new QPixmap(rock_image);
+    computerpix_ = new QPixmap(rock_image);
     ui->playerpic_label->setPixmap(*playerpix_);
     ui->computerpic_label->setPixmap(*computerpix_);
 
@@ -30,15 +38,15 @@ void PlayRoundDialog::ChangePicture()
 
     if(count_ == 1)
     {
-        playerpix_->load("/home/nick/Pictures/paper.jpg");
-        computerpix_->load("/home/nick/Pictures/paper.jpg");
+        playerpix_->load(paper_image);
+        computerpix_->load(paper_image);
         ui->playerpic_label->setPixmap(*playerpix_);
         ui->computerpic_label->setPixmap(*computerpix_);
     }
     else if(count_ == 2)
     {
-        playerpix_->load("/home/nick/Pictures/scissors.jpg");
-        computerpix_->load("/home/nick/Pictures/scissors.jpg");
+        playerpix_->load(scissors_image);
+        computerpix_->load(scissors_image);
         ui->playerpic_label->setPixmap(*playerpix_);
         ui->computerpic_label->setPixmap(*computerpix_);
     }
@@ -59,9 +67,9 @@ void PlayRoundDialog::ChangePicture()
 
 QString PlayRoundDialog::GetFilePath(Moves move)
 {
-    if(move == Moves::Rock) return "/home/nick/Pictures/rock.jpg";
-    else if(move == Moves::Paper) return "/home/nick/Pictures/paper.jpg";
-    else return "/home/nick/Pictures/scissors.jpg";
+    if(move == Moves::Rock) return rock_image;
+    else if(move == Moves::Paper) return paper_image;
+    else return scissors_image;
 }
 
 PlayRoundDialog::~PlayRoundDialog()

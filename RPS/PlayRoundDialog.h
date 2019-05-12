@@ -36,6 +36,10 @@ private:
 
     QPixmap * playerpix_;
     QPixmap * computerpix_;
+
+    QString rock_image;
+    QString paper_image;
+    QString scissors_image;
 };
 
 #endif // PLAYROUNDDIALOG_H
