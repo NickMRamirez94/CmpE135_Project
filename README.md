@@ -77,6 +77,9 @@ Upon launching the application the user will be presented with a series of dialo
   <img src="https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_NewUser.png"/>
   <img src="https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_Login.png"/> 
   <img src="https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_Settings.png"/>
+</p>
+                                                                                                        
+<p align="middle"">
   <img src="https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_GameArea.png"/>
   <img src="https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_PlayRoundDialog.png"/>
   <img src="https://raw.githubusercontent.com/NickMRamirez94/RPS/master/DemoScreenshots/RPS_Statistics.png"/>
